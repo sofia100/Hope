@@ -42,6 +42,7 @@ void LoadPage()
 
 }
     @Override//just a comment for git
+
     public void onBackPressed() {
         if (myWebView.canGoBack())
             myWebView.goBack();
