@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<Spinner
+        android:id="@+id/spinner_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/phone_number"
+         android:textColor="@color/textColor"
+        android:layout_margin="20dp"
+          android:spinnerMode="dialog"/>
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColor="@color/textColor"
+        android:layout_margin="20dp"
+        android:spinnerMode="dialog"/>
+
+    <Button
+        android:id="@+id/btn_generate_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/generate_otp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/textColor"
+        android:layout_margin="20dp"/>
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/txt_pin_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+    android:digits="1234567890"
+        android:inputType="number"
+    android:maxLength="6"
+    android:textIsSelectable="false"
+    android:textSize="35sp"
+    app:pinAnimationType="popIn"
+    app:pinTextBottomPadding="10dp"
+    app:pinLineStroke="2dp"
+    app:pinLineStrokeSelected="4dp"
+    app:pinLineColors="#aaa" />
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/verify_sign_in"
+        android:background="@color/colorAccent"
+        android:textColor="@color/textColor"
+        android:layout_margin="20dp"/>
+</LinearLayout>
+</ScrollView>
