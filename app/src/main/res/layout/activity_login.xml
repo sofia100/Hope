@@ -51,6 +51,11 @@
     app:pinLineStroke="2dp"
     app:pinLineStrokeSelected="4dp"
     app:pinLineColors="#aaa" />
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:hint="website"
+        />
     <Button
         android:id="@+id/btn_sign_in"
         android:layout_width="match_parent"
